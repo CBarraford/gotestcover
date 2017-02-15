@@ -112,6 +112,9 @@ func parseArgs() (pkgArgs, flagArgs []string) {
 
 func resolvePackages(pkgArgs []string) ([]string, error) {
 	cmdArgs := []string{"list"}
+	if flagTags != "" {
+		cmdArgs = append(cmdArgs, "-tags", flagTags)
+	}
 	cmdArgs = append(cmdArgs, pkgArgs...)
 	cmdOut, err := runGoCommand(cmdArgs...)
 	if err != nil {
