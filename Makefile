@@ -10,7 +10,7 @@ check:
 	golint
 
 coverage:
-	gotestcover -coverprofile=coverage.txt github.com/pierrre/gotestcover
+	gotestcover -coverprofile=coverage.txt github.com/cbarraford/gotestcover
 	go tool cover -html=coverage.txt -o=coverage.html
 	
 clean:

@@ -14,7 +14,7 @@ If you want to add new features, create a new fork.
 - Coverage profile with multiple packages (`go test` doesn't support that)
 
 ## Install
-`go get github.com/pierrre/gotestcover`
+`go get github.com/cbarraford/gotestcover`
 
 ## Usage
 ```sh

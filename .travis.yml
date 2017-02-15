@@ -7,11 +7,11 @@ go:
   - tip
 
 before_install:
-  # Redo the travis setup but with the pierre/gotestcover path. This is needed so the package path is correct
-  - mkdir -p $HOME/gopath/src/github.com/pierrre/gotestcover
-  - rsync -az ${TRAVIS_BUILD_DIR}/ $HOME/gopath/src/github.com/pierrre/gotestcover
-  - export TRAVIS_BUILD_DIR=$HOME/gopath/src/github.com/pierrre/gotestcover
-  - cd $HOME/gopath/src/github.com/pierrre/gotestcover
+  # Redo the travis setup but with the cbarraford/gotestcover path. This is needed so the package path is correct
+  - mkdir -p $HOME/gopath/src/github.com/cbarraford/gotestcover
+  - rsync -az ${TRAVIS_BUILD_DIR}/ $HOME/gopath/src/github.com/cbarraford/gotestcover
+  - export TRAVIS_BUILD_DIR=$HOME/gopath/src/github.com/cbarraford/gotestcover
+  - cd $HOME/gopath/src/github.com/cbarraford/gotestcover
 
 install: make setup
 
